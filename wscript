@@ -12,7 +12,7 @@ but WITHOUT ANY WARRANTY; without even the implied warranty of
 MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
 file COPYING for more details. '''
 
-VERSION = '1.0.0'
+VERSION = '1.0.1'
 
 def options (opt):
     opt.load ('compiler_c compiler_cxx')
