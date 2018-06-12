@@ -23,8 +23,13 @@
 #ifndef TURTLEPARSER_HPP
 #define TURTLEPARSER_HPP
 
+#if HAVE_BOOST_SPIRIT_HOME_CLASSIC_UTILITY_CHSET_HPP
+ #include <boost/spirit/home/classic/utility/chset.hpp>
+#endif
 #include <boost/spirit/include/classic_core.hpp>
-#include <boost/spirit/include/classic_utility.hpp>
+#if HAVE_BOOST_SPIRIT_INCLUDE_CLASSIC_UTILITY
+ #include <boost/spirit/include/classic_utility.hpp>
+#endif
 #include <boost/spirit/include/classic_parse_tree.hpp>
 #include <boost/spirit/include/classic_ast.hpp>
 

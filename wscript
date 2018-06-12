@@ -23,6 +23,8 @@ def configure (conf):
     conf.define('VERSION', VERSION)
 
     conf.check(lib='boost_system', uselib_store='BOOST', mandatory=False)
+    conf.check(header_name='boost/spirit/home/classic/utility/chset.hpp',
+               uselib_store='BOOST', mandatory=True)
     conf.check(header_name='boost/spirit/include/classic_dynamic.hpp',
                uselib_store='BOOST', mandatory=True)
     conf.check(header_name='boost/spirit/include/classic_core.hpp',
@@ -30,7 +32,7 @@ def configure (conf):
     conf.check(header_name='boost/spirit/include/classic_parse_tree.hpp',
                uselib_store='BOOST', mandatory=True)
     conf.check(header_name='boost/spirit/include/classic_utility.hpp',
-               uselib_store='BOOST', mandatory=True)
+               uselib_store='BOOST', mandatory=False)
     conf.check(header_name='boost/spirit/include/classic_ast.hpp',
                uselib_store='BOOST', mandatory=True)
 
